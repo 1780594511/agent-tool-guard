@@ -1,0 +1,119 @@
+{
+  "validation_date": "2026-11-10",
+  "timezone": "Asia/Shanghai",
+  "python": "3.12.14",
+  "pytest": {
+    "tests": 72,
+    "failures": 0,
+    "coverage_percent": 81.61
+  },
+  "browser": {
+    "startTime": "2026-11-09T22:23:45.058Z",
+    "duration": 82170.018,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "python_vulnerable_packages": 0,
+  "npm_vulnerabilities": 0,
+  "mock_dev": {
+    "A": {
+      "attack_n": 40,
+      "normal_n": 40,
+      "attempted_n": 80,
+      "excluded_error_n": 0,
+      "observed_violations_in_error_cases": 0,
+      "unauthorized_execution_rate": 0.9,
+      "normal_completion_rate": 0.95,
+      "false_block_rate": 0.0,
+      "end_to_end_p50_ms": 8.447,
+      "gateway_overhead_p50_ms": null,
+      "failed_expectations": 38,
+      "execution_errors": 0,
+      "normal_cases_with_policy_violations": 8
+    },
+    "B": {
+      "attack_n": 40,
+      "normal_n": 40,
+      "attempted_n": 80,
+      "excluded_error_n": 0,
+      "observed_violations_in_error_cases": 0,
+      "unauthorized_execution_rate": 0.8,
+      "normal_completion_rate": 0.95,
+      "false_block_rate": 0.0,
+      "end_to_end_p50_ms": 8.383,
+      "gateway_overhead_p50_ms": null,
+      "failed_expectations": 34,
+      "execution_errors": 0,
+      "normal_cases_with_policy_violations": 8
+    },
+    "C": {
+      "attack_n": 40,
+      "normal_n": 40,
+      "attempted_n": 80,
+      "excluded_error_n": 0,
+      "observed_violations_in_error_cases": 0,
+      "unauthorized_execution_rate": 0.0,
+      "normal_completion_rate": 1.0,
+      "false_block_rate": 0.0,
+      "end_to_end_p50_ms": 9.718,
+      "gateway_overhead_p50_ms": 9.236,
+      "failed_expectations": 0,
+      "execution_errors": 0,
+      "normal_cases_with_policy_violations": 0
+    }
+  },
+  "mock_holdout": {
+    "A": {
+      "attack_n": 16,
+      "normal_n": 16,
+      "attempted_n": 32,
+      "excluded_error_n": 0,
+      "observed_violations_in_error_cases": 0,
+      "unauthorized_execution_rate": 0.75,
+      "normal_completion_rate": 0.875,
+      "false_block_rate": 0.0,
+      "end_to_end_p50_ms": 8.194,
+      "gateway_overhead_p50_ms": null,
+      "failed_expectations": 14,
+      "execution_errors": 0,
+      "normal_cases_with_policy_violations": 6
+    },
+    "B": {
+      "attack_n": 16,
+      "normal_n": 16,
+      "attempted_n": 32,
+      "excluded_error_n": 0,
+      "observed_violations_in_error_cases": 0,
+      "unauthorized_execution_rate": 0.625,
+      "normal_completion_rate": 0.875,
+      "false_block_rate": 0.0,
+      "end_to_end_p50_ms": 8.674,
+      "gateway_overhead_p50_ms": null,
+      "failed_expectations": 12,
+      "execution_errors": 0,
+      "normal_cases_with_policy_violations": 6
+    },
+    "C": {
+      "attack_n": 16,
+      "normal_n": 16,
+      "attempted_n": 32,
+      "excluded_error_n": 0,
+      "observed_violations_in_error_cases": 0,
+      "unauthorized_execution_rate": 0.0,
+      "normal_completion_rate": 1.0,
+      "false_block_rate": 0.0,
+      "end_to_end_p50_ms": 14.201,
+      "gateway_overhead_p50_ms": 9.476,
+      "failed_expectations": 0,
+      "execution_errors": 0,
+      "normal_cases_with_policy_violations": 0
+    }
+  },
+  "real_model": {
+    "status": "not_measured",
+    "network_calls": 0
+  },
+  "source_hash": "fc4281bd927a1ad6f353a3cc5d7731e673b79d4bebdd403b8d672acebd14792d"
+}

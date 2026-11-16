@@ -1,0 +1,11 @@
+{
+  "name": "synthetic-enterprise-v1",
+  "roles": {
+    "employee": {"tools": ["read_document", "create_ticket", "export_report"], "classifications": ["public"]},
+    "engineer": {"tools": ["read_document", "create_ticket", "export_report"], "classifications": ["public", "rd"]},
+    "hr": {"tools": ["read_document", "create_ticket", "export_report"], "classifications": ["public", "hr"]}
+  },
+  "destinations": ["inbox://compliance", "inbox://security"],
+  "approval_required": ["export_report"],
+  "limits": {"max_steps": 6, "task_timeout_seconds": 60, "max_retries": 1, "approval_ttl_seconds": 300}
+}

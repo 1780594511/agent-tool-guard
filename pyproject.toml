@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools==84.2.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-tool-guard"
+version = "0.1.0"
+description = "A deterministic tool authorization gateway and isolated agent security evaluation lab."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = [
+  "fastapi==0.162.2", "pydantic==2.14.3", "uvicorn==0.54.0", "starlette==1.10.0",
+  "httpx==0.28.1", "python-dotenv==1.2.4"
+]
+
+[project.optional-dependencies]
+dev = ["pytest==9.2.0", "pytest-cov==6.1.1", "ruff==0.11.13", "pip-audit==2.10.1"]
+
+[project.scripts]
+atg = "toolguard.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["backend"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["backend"]
+addopts = "-ra"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 110
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]
